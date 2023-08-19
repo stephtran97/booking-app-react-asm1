@@ -1,0 +1,26 @@
+#header-search-form {
+  position: relative;
+}
+
+#header-search-form label {
+  padding: 0;
+  border: none;
+}
+#header-search-form label input {
+  width: 100%;
+  border: none;
+}
+#header-search-form label input::placeholder {
+  color: darkgrey;
+}
+#date-range-picker {
+  width: 120px;
+}
+#header-search-form label i {
+  color: darkgrey;
+}
+@media (max-width: 767px) {
+  #date-range-picker {
+    align-self: flex-start;
+  }
+}

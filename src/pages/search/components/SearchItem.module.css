@@ -1,0 +1,33 @@
+.search-list--item {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+.search-list--item__image {
+  width: 25%;
+  height: 200px;
+  object-fit: cover;
+}
+.search-list--item__content {
+}
+.search-list--item__content p {
+  font-size: 12px;
+  margin: 0.25rem 0;
+}
+.search-list--item__info {
+}
+.rating {
+  color: #fff;
+  background-color: #003580;
+}
+.price-tag button {
+  font-size: 14px;
+}
+.price-tag--description {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+@media (max-width: 575px) {
+  .search-list--item__image {
+    width: 100%;
+  }
+}

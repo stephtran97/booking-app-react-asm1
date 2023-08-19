@@ -1,0 +1,10 @@
+header {
+  color: #fff;
+  background-color: #003580;
+  position: relative;
+}
+@media (min-width: 576px) {
+  #header form {
+    transform: translateY(2rem);
+  }
+}

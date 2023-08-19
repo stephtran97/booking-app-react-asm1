@@ -1,0 +1,5 @@
+.nav-bar-item a:active,
+.nav-bar-item a:visited,
+.nav-bar-item a:link {
+  color: #fff;
+}

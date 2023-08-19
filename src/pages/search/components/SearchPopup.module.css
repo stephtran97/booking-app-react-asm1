@@ -1,0 +1,30 @@
+#search-form {
+  background-color: #febb02;
+  width: 350px;
+  border-radius: 1rem;
+}
+
+#search-form label {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+}
+#search-form label input {
+  border: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+#start-date {
+}
+#end-date {
+}
+.form-control {
+}
+.form-control--input {
+  font-size: 14px;
+}
+.form-control--input__option {
+  width: 50px;
+  border: 1px solid gray;
+}

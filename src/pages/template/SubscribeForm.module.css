@@ -1,0 +1,20 @@
+#subscribe-form {
+  color: #fff;
+  background-color: #003580;
+}
+#subscribe-form form {
+  width: 300px;
+}
+#subscribe-form input {
+  border: none;
+}
+#subscribe-form p,
+#subscribe-form form button,
+#subscribe-form form input {
+  font-size: 14px;
+}
+@media (max-width: 575px) {
+  #subscribe-form form {
+    width: 200px;
+  }
+}

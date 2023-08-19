@@ -1,0 +1,153 @@
+/* Style for position of Date range picker */
+.date-range-picker-home {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 300px;
+
+  font-size: 14px;
+  z-index: 1;
+}
+.date-range-picker-search {
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 767px) {
+  .date-range-picker-home {
+    position: relative;
+    width: 260px;
+  }
+  .rdrCalendarWrapper {
+    background-color: #f1f3f5 !important;
+    box-shadow: 1px 2px 2px #e9ecef;
+  }
+}
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .date-range-picker-search {
+    position: absolute;
+    transform: translateY(-20%);
+    left: 430px;
+  }
+  .rdrCalendarWrapper {
+    background-color: #f1f3f5 !important;
+    box-shadow: 1px 2px 2px #e9ecef;
+  }
+}
+@media (max-width: 767px) {
+  .date-range-picker-search {
+    position: relative;
+  }
+} */
+
+/* Date range styles */
+/* Date pick */
+.rdrCalendarWrapper {
+  align-self: flex-start;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.rdrDateDisplayWrapper {
+  border-radius: 0.5rem;
+  background-color: #f1f3f5;
+  padding: 1rem 0.5rem;
+}
+.rdrDateDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+.rdrDateInput {
+  display: flex;
+  justify-content: center;
+
+  width: 50%;
+  background-color: #fff;
+  padding: 0.5rem;
+  /* margin: 0 1rem; */
+  border-radius: 0.5rem;
+
+  box-shadow: 1px 2px 2px #e9ecef;
+}
+.rdrDateInput input {
+  border: none;
+  width: 100%;
+}
+.rdrDateDisplayItemActive {
+  border: 2px solid #339af0;
+}
+
+/* Month Year */
+.rdrMonthAndYearWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+.rdrNextPrevButton {
+  transform: translate(3);
+  padding: 0.25rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+.rdrPprevButton i::before {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"><path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg>');
+}
+.rdrNextButton i::before {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg>');
+}
+
+.rdrMonthAndYearPickers span select {
+  background-color: inherit;
+  border: none;
+}
+/* Month day */
+.rdrMonths {
+  margin-top: 1rem;
+}
+.rdrWeekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  color: #000;
+}
+
+.rdrDays {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.rdrDay {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  color: #000 !important;
+}
+.rdrDayDisabled {
+  color: #ced4da !important;
+  /* background-color: #f8f9fa; */
+}
+.rdrDayToday {
+  color: #000 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+/* start end date */
+:has(> .rdrStartEdge) {
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-color: #339af0;
+  color: #fff !important;
+}
+:has(> .rdrEndEdge) {
+  border-radius: 0 0.5rem 0.5rem 0;
+  /* border: 2px solid #ffcc02; */
+  background-color: #339af0;
+  color: #fff !important;
+}
+:has(> .rdrInRange) {
+  background-color: #339af0;
+  color: #fff !important;
+}

@@ -1,0 +1,30 @@
+.detail-hotel {
+}
+.detail-hotel--info {
+}
+.detail-hotel--info__header {
+  font-size: 14px;
+}
+.detail-hotel--info__header button,
+.detail-hotel--booking button {
+  font-size: 12px;
+}
+.detail-hotel--info__photos {
+}
+.detail-hotel--info__photos img {
+  object-fit: cover;
+}
+.detail-hotel--description {
+}
+.detail-hotel--description__content {
+  font-size: 12px;
+}
+.detail-hotel--booking {
+  background-color: #ebf3ff;
+}
+.detail-hotel--booking p {
+  font-size: 12px;
+}
+.detail-hotel--booking h6 {
+  font-size: 14px;
+}

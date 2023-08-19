@@ -1,0 +1,9 @@
+li.footer-item {
+  list-style-type: none;
+}
+.footer-item a:active,
+.footer-item a:link,
+.footer-item a {
+  text-decoration: none;
+  color: #003580;
+}

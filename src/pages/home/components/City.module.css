@@ -1,0 +1,17 @@
+.city-card {
+  max-height: 280px;
+}
+.city-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.city-card--text {
+  color: #fff;
+  transform: translate(5%, -150%);
+}
+@media (max-width: 767px) {
+  .city-card img {
+    max-height: 280px;
+  }
+}
