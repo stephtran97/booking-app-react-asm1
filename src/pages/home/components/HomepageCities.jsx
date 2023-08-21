@@ -24,7 +24,7 @@ export default function HomepageCities() {
     <section id={`${styles["cities"]}`} className="mb-4">
       <div className="container">
         {/* Display each city */}
-        <div className="row">
+        <div className="row gx-1">
           {data.map((element) => {
             return (
               <City

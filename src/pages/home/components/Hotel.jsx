@@ -4,7 +4,7 @@ import styles from "./Hotel.module.css";
 export default function Hotel({ name, city, price, rate, type, image_url }) {
   return (
     <div className={`${styles["hotels-card"]} mb-4`}>
-      <img src={image_url} alt="" className="rounded-3" />
+      <img src={image_url} alt="" />
       <h6 className="mt-2">
         <a href="/detail">{name}</a>
       </h6>

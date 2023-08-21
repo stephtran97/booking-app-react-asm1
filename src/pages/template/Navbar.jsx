@@ -30,7 +30,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav id={`${styles["nav-bar"]}`} className="p-2 pb-4">
+    <nav id={`${styles["nav-bar"]}`} className="py-2 pb-4">
       <div className="container">
         {/* Navbar title */}
         <div className="d-sm-flex justify-content-between align-items-center">

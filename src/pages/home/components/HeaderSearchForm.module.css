@@ -19,7 +19,7 @@
 #header-search-form label i {
   color: darkgrey;
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   #date-range-picker {
     align-self: flex-start;
   }

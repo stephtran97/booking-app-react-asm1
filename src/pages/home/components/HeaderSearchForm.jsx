@@ -70,10 +70,10 @@ export default function HeaderSearchForm() {
     <>
       <form
         id={`${styles["header-search-form"]}`}
-        className="d-flex flex-md-row flex-column align-items-center my-2 border border-2 border-warning rounded bg-white py-2 px-3"
+        className="d-flex flex-lg-row flex-column align-items-center my-2 border border-2 border-warning rounded bg-white py-2 px-3"
       >
         {/* Input for Place */}
-        <label className="form-control d-flex justify-content-center align-items-center">
+        <label className="form-control d-flex justify-content-lg-start justify-content-center align-items-center">
           <i className="fa fa-bed mx-1"></i>
           <input
             type="text"
@@ -109,7 +109,7 @@ export default function HeaderSearchForm() {
             className="mx-1 ps-1"
             style={{ width: "15px" }}
           />
-          <span>adult</span>
+          <span style={{ color: "darkgrey" }}>adult ·</span>
           <input
             type="number"
             placeholder="0"
@@ -117,7 +117,7 @@ export default function HeaderSearchForm() {
             className="mx-1 ps-1"
             style={{ width: "15px" }}
           />
-          <span>children</span>
+          <span style={{ color: "darkgrey" }}>children ·</span>
           <input
             type="number"
             placeholder="1"
@@ -125,11 +125,12 @@ export default function HeaderSearchForm() {
             className="mx-1 ps-1"
             style={{ width: "15px" }}
           />
-          <span>room</span>
+          <span style={{ color: "darkgrey" }}>room</span>
         </label>
         <div
           className="btn btn-primary align-self-stretch"
           onClick={searchBtnHandler}
+          style={{ borderRadius: "0" }}
         >
           Search
         </div>

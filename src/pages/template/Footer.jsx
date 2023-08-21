@@ -62,7 +62,7 @@ export default function Footer() {
   return (
     <>
       <footer id={`${styles["footer"]}`}>
-        <div className="container d-sm-flex justify-content-center">
+        <div className="container d-sm-flex justify-content-between">
           {/* Display each footer column */}
           {data.map((element) => {
             return (
